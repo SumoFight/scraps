@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <title>Contact Form</title>
+</head>
+<body>
+    <!-- title -->
+    <h1 class="contact-us">Contact Us</h1>
+
+    <!-- form -->
+        <form action="/submit" method="post">
+
+            <!-- six divs -->
+
+             <!-- 1 -->
+            <div class="form-group">
+                <label for="FirstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Pablo">
+            </div>
+
+            <!-- 2 -->
+            <div class="form-group">
+                <label for="Last Name"> Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Picasso">
+            </div>
+
+            <!-- 3 -->
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="Pablo.Picasso@hotmail.com"> 
+            </div>
+
+            <!-- 4 -->
+            <div class="form-group">
+                <label>Query Type *</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="queryType" value="general" required>
+                            General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="queryType" value="support">
+                            Support
+                    </label>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="message">
+
+                <label for="message">Message *</label>
+                <textarea type="text" id="message" name="message" rows="4" columns="30"> 
+                </textarea>
+            </div>
+
+            <!-- 6 -->
+            <div class="checkbox-button">
+                <div class="checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I hereby consent to being contacted by the team *</label>
+                </div> 
+                <br>
+                <button type="submit">Submit</button>
+            </div> 
+        </form>
+</body>
+</html>

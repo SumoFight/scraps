@@ -1,0 +1,151 @@
+/*  */
+
+html{
+    background-color:  hsl(148, 38%, 91%);
+}
+
+body{
+    /* border: 5px dashed #333; */
+    background-color: hsl(0, 0%, 100%);
+    min-width:275px;
+    max-width: 540px;
+    min-height: 400px;
+    max-height: 800;
+    border-radius: 10px;
+
+    margin-left: 450px;
+    margin-top: 150px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contact us */
+h1 { 
+    margin-right: 350px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+label {
+    margin-left: -5px;
+    margin-bottom: 1px;
+    padding: 5px;
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    color: hsl(187, 24%, 22%);
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form { 
+    width: 450px;
+    
+    margin-left: 10px;
+    /* border: 3px dashed orange; */
+
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between; 
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* 6 divs */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px dashed blue; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* query type 4th div */
+.radio-group{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+    /* border: 3px dashed green; */
+}
+
+/* Message 5th div */
+.message {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px dashed blue; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* Check box 6th dive */
+.checkbox-button{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 100%;
+}
+
+/* @media (max-width: 300px){
+    .container,
+    form {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-actions {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+} */
